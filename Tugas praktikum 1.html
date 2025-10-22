@@ -1,1 +1,142 @@
-# Praktikum-1.html
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Muhammad Sultan Ridho</title>
+  <style>
+    :root {
+      --accent: #2b6cb0;
+      --muted: #6b7280;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: var(--font, Inter), sans-serif;
+      background: #f6f8fa;
+      color: #111;
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 6px 24px rgba(16, 24, 40, 0.06);
+    }
+    header { display: flex; gap: 20px; align-items: center; }
+    .avatar img {
+      width: 96px;
+      height: 96px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    h1 { margin: 0; font-size: 22px; }
+    .meta { color: var(--muted); margin-top: 6px; }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .card {
+      padding: 18px;
+      border-radius: 10px;
+      background: #fefeff;
+      border: 1px solid #f8fafc;
+    }
+    h2 { font-size: 16px; margin: 0 0 10px 0; }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eef6ff;
+      color: var(--accent);
+      font-size: 13px;
+    }
+    .small { font-size: 13px; color: var(--muted); }
+    .edu, .exp { display: flex; flex-direction: column; gap: 10px; }
+    .item {
+      padding: 10px;
+      border-radius: 8px;
+      background: transparent;
+      border-left: 3px solid rgba(43, 108, 176, 0.12);
+    }
+    .item h3 { margin: 0; font-size: 15px; }
+    .item .when { font-size: 13px; color: var(--muted); }
+    footer { margin-top: 18px; text-align: center; color: var(--muted); font-size: 13px; }
+    @media (max-width: 820px) {
+      .row { grid-template-columns: 1fr; }
+      .container { padding: 18px; }
+      .avatar img { width: 72px; height: 72px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <img src="IMG.jpg" alt="Foto Profil">
+      </div>
+      <div>
+        <h1>Muhammad Sultan Ridho</h1>
+        <div class="meta small">Bogor, Indonesia • msultanridho111@gmail.com • +62 813-8277-6542</div>
+      </div>
+    </header>
+
+    <div class="row">
+      <main>
+        <section class="card section">
+          <h2>Tentang Saya</h2>
+          <p class="small">
+            Saya adalah seorang mahasiswa di Sekolah Tinggi Teknologi Terpadu Nurul Fikri (STT-NF), jurusan Teknik Informatika. 
+            Sebelumnya, saya bersekolah di SMK Darma Bakti. 
+            Saya juga aktif dalam kegiatan organisasi sekolah, yaitu Majelis Perwakilan Kelas (MPK).
+          </p>
+        </section>
+
+        <section class="card section">
+          <h2>Pengalaman Kerja</h2>
+          <div class="exp">
+            <div class="item">
+              <h3>PKL — PT Juahn Indonesia</h3>
+              <div class="when">Oktober 2023 — Desember 2023</div>
+              <p class="small">
+                Saya melaksanakan Praktik Kerja Lapangan (PKL) di PT Juahn Indonesia sebagai helper di bagian Spray UV.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card section">
+          <h2>Pendidikan</h2>
+          <div class="edu">
+            <div class="item">
+              <h3>Teknik Permesinan — SMK Darma Bakti</h3>
+              <div class="when">2022 — 2025</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <section class="card section">
+          <h2>Keahlian</h2>
+          <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Mastercam</span>
+            <span class="skill">AutoCAD</span>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+
+    </footer>
+  </div>
+</body>
+            </html>
